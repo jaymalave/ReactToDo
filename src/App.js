@@ -2,6 +2,7 @@ import './App.css';
 import AddTask from './components/AddTask'
 import React, {useState} from 'react';
 import TaskList from './components/TaskList';
+import ToDo from './components/ToDo'
 
 
 
@@ -22,7 +23,8 @@ const addTaskHandler = (task, priority) => {
     <div className = "App">
      <h1>Jay's To-Do List </h1>
      <AddTask onAddTask = {addTaskHandler}/>
-     <TaskList tasks = {taskList}/>
+     <TaskList tasks = {taskList} list = {taskList} setList = {setTaskList}/>
+     
      </div>
   );
 }

@@ -1,15 +1,13 @@
 import React from "react";
+import ToDo from './ToDo'
 import './TaskList.css'
+import { PromiseProvider } from "mongoose";
 
 const TaskList = (props) => {
     return (
-        <div>
-               
+        <div>  
            {props.tasks.map((task) => (
-            <div className = 'task-card'>
-               {task.task} [{task.priority}]    
-            
-            </div>
+                   <ToDo data = {task} list = {props.list} setList = {props.setList}/>
                ))}
        
         </div>

@@ -21,9 +21,9 @@ const AddTask = (props) => {
     return (
       <div className = 'add-task'>
           <form onSubmit = {addTaskHandler} className = 'task-form'>
-          <label htmlFor="task" class = "label">Task</label>   
+          <label htmlFor="task" className = "label">Task</label>   
            <input id="task" type="text" className = 'task-input'ref={taskInputRef}/>
-           <label htmlFor="priority" class = "label">Priority No.</label>
+           <label htmlFor="priority" className = "label">Priority No.</label>
            <input id="priority" type="number" className = 'priority-input' ref={priorityInputRef}/>
            <button type="submit" className = 'button'>Add Task</button> 
           </form>
